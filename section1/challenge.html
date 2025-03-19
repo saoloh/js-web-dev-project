@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>challenge</title>
+  </head>
+  <body>
+    <h1>challenge</h1>
+    <div id="elzero">object</div>
+    <script>
+      // Add Variables Here
+      let first_num = 10;
+      let second_num = 20;
+      let third = first_num + "" + second_num;
+      // Ouput
+      console.log(first_num + "" + second_num); // Normal Concatenate => 1020
+      console.log(typeof (first_num + " " + second_num)); // Normal Concatenate => String
+      console.log(`${first_num}${second_num} `); // Template Literals Way => 1020
+      console.log(typeof `${first_num}${second_num} `); // Template Literals Way => String
+      console.log(second_num + "\n" + first_num);
+      /*
+  Normal Concatenate
+  20
+  10
+*/
+      console.log(`${second_num}
+${first_num} `);
+      /*
+  Template Literals Way
+  20
+  10
+*/
+//================= task two================ 
+console.log(elzero.innerHTML); // object
+console.log(typeof elzero); // object
+// ================task three===============
+console.log("\`Im\' In \\\\ Love \\\\ \"\"\" \'\'\'  \+\+  with \+\+ \\ \"\"\" \\ \"\"\" \"\" JavaScript \"\" \`\`  ");
+
+
+    </script>
+  </body>
+</html>
