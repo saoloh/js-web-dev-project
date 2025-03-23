@@ -54,9 +54,9 @@ console.groupEnd(); // End Group 2
 console.table(["Elzero", "sameh", "aya", "gamal", "ahmed"]);
 
 //6//
-//override the functions with empty ones
-console.log = function () {};
-document.write = function () {};
+//just comment them
 
+/*
 console.log("Iam In Console");
 document.write("Iam In Page");
+*/

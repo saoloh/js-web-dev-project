@@ -24,7 +24,7 @@ ${numberOne}`)
 //2//
 console.log(elzero.innerHTML); // object
 console.log(typeof elzero); // object
-//the solution is to create a div with id=elzero
+//the solution is to create a div with id=elzero and text inside=object
 
 //3//
 console.log("/`I'm In \n\\\\ \nLove \\\\ \"\"\"  \'\'\' \n\+\+ With \+\+\n\\\"\"\"\\\"\"\"\n\"\"JavaScript\"\"\`\`")
@@ -33,6 +33,4 @@ console.log("/`I'm In \n\\\\ \nLove \\\\ \"\"\"  \'\'\' \n\+\+ With \+\+\n\\\"\"
 let a = 21;
 let b = 20;
 let ab = `${b}${a}_`.repeat(3)
-console.log(ab)
-console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`); // _21_2021_2021_2021_20_
-console.log(`_${a}_${ab}${b}_`); // _21_2021_2021_2021_20_
+console.log("_" + `${a}_${b}`.repeat(4) + "_"); // _21_2021_2021_2021_20_
