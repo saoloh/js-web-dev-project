@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+}
+.style{
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    background-color: bisque;
+    border: none;
+    box-shadow: 1px 1px solid green;
+    text-align: center;
+    padding-top: 15px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+form .input{
+    margin:20px 0px 20px 0px;
+    width: 200px;
+    outline: none;
+    
+}
+form [type="submit"]{
+    margin:20px 0px 20px 0px;
+    width: 200px;
+    outline: none;
+    background-color: green;
+    color: white;
+    font-size: large;
+}
