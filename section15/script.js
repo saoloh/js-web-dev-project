@@ -1,132 +1,58 @@
-// // Create Your Object Here
-// let member = {
-//     name:"elzero",
-//     age:22,
-//     country:"egypt",
-//     fullDetails:function(){
-//         return `my name is ${this.name},my age is ${this.age}, i live in ${this.country}`;
-//     },
-// }
-// console.log(member.name); // Elzero
-// console.log(member.age); // 38
-// console.log(member.country); // Egypt
-// console.log(member.fullDetails());
-// // My Name Is Elzero, My Age Is 38, I Live in Egypt
-//======================================================
-// Method One
-// Create Your Object Here
-// let objMethodOne = {
-//     property:1,
-// }
-// console.log(objMethodOne.property); // "Method One"
 
-// // Method Two
-// // Create Your Object Here
-// let objMethodTwo = new Object({
-//     property:2,
-// });
-// console.log(objMethodTwo.property); // "Method Two"
+/* Bom challenge*/
 
-// // Method Three
-// // Create Your Object Here
-// let objMethodThree = Object.create(objMethodTwo);
-// console.log(objMethodThree.property); // "Method Three"
+// tasksDiv = document.querySelector(".container .task");
+// taskName = document.querySelector(".input");
+// let tasks = [];
+// let i =0 ;
+// let ele = document.createElement("div");
+// let elep = document.createElement("p");
+// let eleButton = document.createElement("button");
 
-// // Method Four
-// // Create Your Object Here
-// let objMethodFour = Object.assign(objMethodThree,objMethodTwo,objMethodOne)
-// console.log(objMethodFour.property); // "Method Four"
-//===================================================
-// let a = 1;
+// eleButton.textContent = "remove";
+// ele.appendChild(elep);
+// ele.appendChild(eleButton);
+// submit = document.querySelector(".container .form .add").addEventListener("click",function(){
+//     i++;
+//     tasks.push({title:taskName.value});
+//     window.localStorage.setItem("tasks",tasks);
+//     elep.textContent =`${taskName.value}`;
+//     eleButton.setAttribute("class",`remove-button${i}`);
+//     tasksDiv.appendChild(ele.cloneNode(true));
 
-// let threeNums = {
-//   b: 2,
-//   c: 3,
-//   d: 4,
-// };
 
-// let twoNums = {
-//   e: 5,
-//   f: 6,
-// };
-
-// // Create Your Object Here in One Line
-// let finalObject = Object.assign({a},threeNums,twoNums);
-// console.log(finalObject);
-
-/*
-  a: 1
-  b: 2
-  c: 3
-  d: 4
-  e: 5
-  f: 6
-*/
-//==================================================
-// The Object To Work With
-
-let myFavGames = {
-    "Trinity Universe": {
-    publisher: "NIS America",
-    price: 40,
-    },
-    "Titan Quest": {
-    publisher: "THQ",
-    bestThree: {
-        one: "Immortal Throne",
-        two: "Ragnarök",
-        three: "Atlantis",
-    },
-    price: 50,
-    },
-    YS: {
-    publisher: "Falcom",
-    bestThree: {
-        one: "Oath in Felghana",
-        two: "Ark Of Napishtim",
-        three: "origin",
-    },
-    price: 40,
-    },
-};
-
-  // Code One => How To Get Object Length ?
-let objectLength = ;
-
-for (let i = 0; i < objectLength; i++) {
-    console.log(`The Game Name Is ???????`);
-    console.log(`The Publisher Is ???????`);
-    console.log(`The Price Is ???????`);
-
-    // Check If Nested Object Has Property (bestThree)
-    if (???????) {
-    console.log("- Game Has Releases");
-    console.log(`First => ???????`);
-    console.log(`Second => ???????`);
-    console.log(`Third => ???????`);
-    }
-    console.log("#".repeat(20));
-}
-
-  // Ouput
+//     //turn the delet button
+//     let removebtn = document.querySelectorAll("button");
+//     console.log(removebtn);
+//     let btnArr = Array.from(removebtn);
+//     btnArr.forEach(element => {
+//         element.addEventListener("click",function(){
+//         this.parentElement.remove();
+//     });
+//     });
   
-  "The Game Name Is Trinity Universe"
-  "The Publisher Is NIS America"
-  "The Price Is 40"
-  "####################"
-  "The Game Name Is Titan Quest"
-  "The Publisher Is THQ"
-  "The Price Is 50"
-  "- Game Has Releases"
-  "First => Immortal Throne"
-  "Second => Ragnarök"
-  "Third => Atlantis"
-  "####################"
-  "The Game Name Is YS"
-  "The Publisher Is Falcom"
-  "The Price Is 40"
-  "- Game Has Releases"
-  "First => Oath in Felghana"
-  "Second => Ark Of Napishtim"
-  "Third => origin"
-  "####################"
+// })
+
+
+//=======================================================
+// let fontOption = document.querySelector("#font").onclick = function (){
+//     window.localStorage.setItem("font",this.value);
+// }
+// let colorOption = document.querySelector("#color").onclick = function (){
+//     window.localStorage.setItem("color",this.value);
+// }
+// let valueOption = document.querySelector("#value").onclick = function (){
+//     window.localStorage.setItem("value",this.value);
+// }
+//=======================================================
+// let textInput = document.querySelector("#textbox").onblur = function (){
+//     window.sessionStorage.setItem("text",this.value);}
+
+// let passwordinput = document.querySelector("#passwordbox").onblur = function (){
+//     window.sessionStorage.setItem("password",this.value);}
+
+// let searchinput = document.querySelector("#searchbox").onblur = function (){
+//     window.sessionStorage.setItem("search",this.value);}
+
+// let colorinput = document.querySelector("#coloroption").onclick = function (){
+//     window.sessionStorage.setItem("color",this.value);}
