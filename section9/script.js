@@ -1,53 +1,58 @@
-// let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
-// let num = 3;
+// function getDetails(zName, zAge, zCountry) {
+//     function namePattern(zName) {
+//         let firstName = " ";
+//         let lastName = " ";
+//         console.log(zName.slice(0,zName.indexOf(" ")));
+//         firstName = zName.slice(0,zName.indexOf(" "));
+//         let arr = firstName.split("");
+//         firstName = arr.join("");
+//         arr[0] = arr[0].toLowercase();
+//         lastName = zName.charAt(zName.indexOF(" ") + 1).toUppercase;
+//         let nameMess = firstName + " " +lastName;
+//       // Osama Mohamed => Osama M.
+//       // Ahmed ali => Ahmed A.
+//     }
+//     function ageWithMessage(zAge) {
+//         let age = parseInt(zAge);
+//         let ageMess = `Your Age Is ${age}`;
+//         console.log(`Your Age Is ${age}`);
+//       // 38 Is My Age => Your Age Is 38
+//       // 32 Is The Age => Your Age Is 32
+//     }
+//     function countryTwoLetters(zCountry) {
+//       console.log(`you live in ${zCountry.slice(0,2)}`);
+//       let countryMess = `you live in ${zCountry.slice(0,2)}`;
+//       // Egypt => You Live In EG
+//       // Syria => You Live In SY
+//     }
+//     function fullDetails() {
+//       console.log(`Hello ${nameMess}.,${ageMess},You Live In ${countryMess}`);
+//     }
+//     return fullDetails(); // Do Not Edit This
+//   }
+// console.log(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
+//   // Hello Osama M., Your Age Is 38, You Live In EG
+// console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
+//   // Hello Ahmed A., Your Age Is 32, You Live In SY
+// =========================================
 
-// // Method 1
-// console.log(myFriends.slice(0,3)); // ["Ahmed", "Elham", "Osama"];
+// let itsMe = _ =>{return `Iam A Normal Function`};
 
-// // Method 2
-// myFriends.splice(3,1);
-// console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
-//==========================
-// let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+//   console.log(itsMe()); // Iam A Normal Function
+//===========================================
 
-// // Write Your Code Here
-// friends.splice(0,1);
-// friends.splice(2,1);
-// console.log(friends); // ["Eman", "Osama"]
+// let urlCreate = (protocol, web, tld) =>{
+//     return `${protocol}://www.${web}.${tld}`;
+//   }
+//   console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+//==============================================
+// let = checker =  zName => {
+//     return  status => {
+//       return  salary => {
+//         return status === "Available" ? `${zName}, My Salary Is ${salary}` : `Iam Not Avaialble`;
+//       };
+//     };
+//   }
+//   console.log(checker("Osama")("Available")(4000)); // Osama, My Salary Is 4000
+//   console.log(checker("Ahmed")("Not Available")()); // Iam Not Avaialble
 //============================================
-// let arrOne = ["C", "D", "X"];
-// let arrTwo = ["A", "B", "Z"];
-// let finalArr = [];
-
-// // Write One Single Line Of Code
-// finalArr = arrOne.concat(arrTwo).sort().reverse();
-// console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
-//====================================
-// let website = "Go";
-// let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
-
-// console.log(words.reverse().shift()[0].slice(website.length).toUpperCase()); // ZERO
-//======================================
-// let needle = "JS";
-// let haystack = ["PHP", "JS", "Python"];
-
-// // Write 3 Solutions
-// if(haystack.includes(needle)){
-//     console.log("found");
-// }
-// if(haystack[1] === needle){
-//     console.log("found");
-// }
-// if(haystack.slice(1,2) == needle){
-//     console.log("found");
-// }
-//======================================
-// let arr1 = ["A", "C", "X"];
-// let arr2 = ["D", "E", "F", "Y"];
-// let allArrs = [];
-
-// // Your Code Here
-// allArrs.push(arr2[2],arr1[2],arr2[3]);
-// allArrs =  allArrs.join("").toLowerCase();
-// console.log(allArrs); // fxy
-//==================================
