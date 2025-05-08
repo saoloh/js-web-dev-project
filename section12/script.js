@@ -1,115 +1,102 @@
+// console.log(document.querySelector("#elzero"));
+// console.log(document.querySelector(".element"));
+// console.log(document.querySelector("div.element"));
+// console.log(document.querySelector("div#elzero"));
+// console.log(document.querySelectorAll(".element"));
+// console.log(document.querySelectorAll("div.element"));
+// console.log(document.querySelectorAll("body > .element"));
+// console.log(document.querySelectorAll("body > div.element"));
+// console.log(document.getElementById("elzero"));
+// console.log(document.getElementsByClassName("element"));
+// console.log(document.getElementsByTagName("div"));
+// console.log(document.div);
+//=====================================
+// let photo = document.getElementsByTagName("img");
+// let newArr = Array.from(photo);
+// newArr.forEach(element => {
+//     element.setAttribute("sec",`https://elzero.org/wp-content/themes/elzero/imgs/logo.png`);
+//     element.setAttribute("alt",`Elzero Logo`);
+// });
+//==================================
+// let ele = document.createElement("div");
+// let attr = document.createAttribute("class");
+// attr.value = "style";
+// ele.setAttributeNode(attr);
+// let text = document.createTextNode("hard");
+// ele.appendChild(text);
+// document.body.appendChild(ele);
+//===============================
 
-// FUNCTION RANDOM ARGUMENT CHALLENGE
-
-
-// function showDetails(a,b,c){
-//     let arr =[];
-//     arr.push(a,b,c);
-
-//     let str,bool,age;
-//     for(let i = 0 ; i <arr.length;i++){
-
-//         if(typeof(arr[i]) === "string"){
-//             str = arr[i];
-//         } else if(typeof(arr[i]) === "number"){
-//             age = arr[i];
-//         } else{
-//             bool = arr[i];
-//         }
-//     }
-//     bool?console.log(`Hello ${str}, Your Age is ${age}, you are avialable for hire`):console.log(`Hello ${str}, Your Age is ${age}, you are not avialable for hire`);
+// for(let i = 0 ;i <100 ; i++){
+//     let product = document.createElement("div");
+//     product.classList.add("product");
+//     let head = document.createElement("h3");
+//     head.textContent = "text";
+//     let par = document.createElement("h3p");
+//     par.textContent = "text";
+//     document.body.appendChild(product);
+//     product.appendChild(head);
+//     product.appendChild(par);
 // }
-
-
-
-// showDetails("osama",38,true);
-// showDetails(38,"osama",true);
-// showDetails(true,38,"osama");
-// showDetails(false,38,"osama");
-//==============================================
-// function sayHello(theName, theGender) {
-//     if(theGender === "Male"){
-//         console.log(`"Hello MR ${theName}"`);
-//     } else if(theGender === "Female"){
-//         console.log(`"Hello Miss ${theName}"`);
-//     } else{
-//         console.log(`"Hello  ${theName}"`);
-//     }
-
-//   }
-  
-//   // Needed Output
-//   sayHello("Osama", "Male"); // "Hello Mr Osama"
-//   sayHello("Eman", "Female"); // "Hello Miss Eman"
-//   sayHello("Sameh"); // "Hello Sameh"
-//=================================================
-// function calculate(firstNum, secondNum, operation) {
-//     if(typeof(secondNum) === "undefined"){
-//         console.log(`Second Number Not Found`);
-    
-//     }else{ switch(operation){
-//         case "add":
-//             console.log(firstNum + secondNum);
-//             break;
-//         case "subtract":
-//             console.log(firstNum - secondNum);
-//             break;
-//         case "multiply":
-//             console.log(firstNum * secondNum);
-//             break;
-//         default:
-//             console.log(firstNum + secondNum);
-//     }}
-   
-//   }
-  
-//   // Needed Output
-//   calculate(20); // Second Number Not Found
-//   calculate(20, 30); // 50
-//   calculate(20, 30, 'add'); // 50
-//   calculate(20, 30, 'subtract'); // -10
-//   calculate(20, 30, 'multiply'); // 600
 //====================================================
-// function ageInTime(theAge) {
-//     if(theAge < 10 || theAge > 100){
-//         console.log(`age out of range`);
+// //get the div you want to display on
+// let outputDiv  = document.querySelector('.result');
+// //get the  html collection inputFourm
+
+// let inputFourm = document.getElementsByTagName('input');
+
+// console.log(inputFourm[0]);
+
+// //change info in the outputDiv
+// outputDiv.innerHTML  = `{${inputFourm.dollar}} USD Dollar = {${inputFourm.dollar*50}} Egyptian Pound`
+//==================================================
+// let firstDiv  = document.querySelector(".one");
+// let secondtDiv  = document.querySelector(".two");
+
+// let firstDivText = firstDiv.childNodes[0].data;
+// let secondtDivText = secondtDiv.childNodes[0].data;
+
+// firstDiv.childNodes[0].data = `${secondtDivText}`;
+// secondtDiv.childNodes[0].data = `${firstDivText} 2`;
+
+// let titleOne = firstDiv.getAttribute("title");
+// let titleTwo = secondtDiv.getAttribute("title");
+
+// firstDiv.title = titleTwo;
+// secondtDiv.title = titleOne;
+//=============================================
+// let imageshtmlnodelist = Array.from(document.images);
+
+
+// imageshtmlnodelist.forEach((ele)=>{
+
+//     if(ele.hasAttribute("alt")){
+//         ele.alt = "old";
 //     } else{
-//         console.log(`months =>${theAge*12} \n weeks =>${theAge*12*4} \n days =>${theAge*365} \n hours => ${theAge*365*24} \n minutes => ${theAge*365*24*60} \n hours => ${theAge*365*24*60*60}`);
+//         ele.setAttribute("alt","Elzero New");
 //     }
-//   }
-  
-//   // Needed Output
-//   ageInTime(110); // Age Out Of Range
-//   ageInTime(38); // Months Example => 456 Months
-//===============================================
-// function createSelectBox(startYear, endYear) {
-//     document.write("<select>");
-//     for(let i = startYear ; i <=endYear ;i++){
-//     document.write(`<option value="${i}">${i}</option>`);
-//     }
-//     document.write("</select>");
-//   }
-//   createSelectBox(2000, 2021);
- 
-//===============================================
-
-function multiply(...arg){
-    let result = 1;
-    let num = 1;
-    for(let i = 0 ; i < arg.length ;i++){
-        if(typeof(arg[i]) === "string"){
-            continue;
-        } else{
-            num = arg[i];
-            num = Math.floor(num);
-            arg[i] = num;
-            result *= arg[i];
-        }
-    }
-    console.log(result);
-}
+// })
+//=========================================
+// // number of ele
+// let formInput = Array.from(document.querySelectorAll('.input'));
+// console.log(formInput);
+// let numinput = formInput[0].nodeValue
+// console.log(numinput)
+// // text in the ele
+// let 
+// // type of ele
 
 
-multiply(10, 20); // 200
-multiply("A", 10, 30); // 300
-multiply(100.5, 10, "B"); // 1000
+
+
+
+// //removve old ele
+
+
+// //loop that creats the ele type 
+// //num of time 
+// //class
+// //id increment
+// // text 
+// // style 
+
