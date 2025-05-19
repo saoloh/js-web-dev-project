@@ -1,113 +1,95 @@
+// let myBirthDate = new Date('6-19-2004');
+// let dateNow = Date.now();
+// let diff = dateNow - myBirthDate;
 
-             /*Destructing challenge */
-// let chosen = 2;
+// console.log(diff / 1000);
+// console.log(diff / 1000 /  60);
+// console.log(diff / 1000 /  60 /60);
+// console.log(diff / 1000 /  60 /60 /24) ;
+// console.log(diff / 1000 /  60 /60 /24 /30) ;
+// console.log(diff / 1000 /  60 /60 /24 /365) ;
+//====================================
+// let dateNow = new Date();
+// dateNow.setFullYear(1980,0,1);
+// dateNow.setHours(0,0,1);
+// console.log(dateNow);
+//====================================
+// let dateNow = new Date();
+// dateNow.setMonth(-1);
+// console.log(dateNow);
+// console.log(dateNow.getMonth(-1));
+// console.log(dateNow.getDay());
+//====================================
+// let myBirthDate = new Date('6-19-2004');
+// let myBirthDate = new Date(2004,6,19);
+// let myBirthDate = new Date(2004,6,19,0,0,0);
+// console.log(myBirthDate)
+//====================================
+//time now 
+// let timeNow = new Date();
 
-// let myFriends = [
-//     {title: "osama",age: 39, available:true,skills: ["HTml","css"]},
-//     {title: "Ahmed",age: 25, available:false,skills: ["python","django"]},
-//     {title: "sayed",age: 33, available:true,skills: ["php","larvel"]},
-// ];
-// let title , age , available , a ;
-// if (chosen === 1)
-//     {
-//     [{title , age , available , skills: [, a]}] = myFriends;
-//     console.log(`${title} \n ${age} \n ${available? "": "Not"}available \n ${a}`);
-    
+// //operation
+
+// for(let i = 0 ; i < 100 ; i++){
+//   console.log(i);
 // }
-//     else if (chosen === 2)
-//     {
-//     [,{title , age , available , skills: [, a]}] = myFriends;
-// console.log(`${title} \n ${age} \n ${available? "": "Not"}available \n ${a} `);
 
-//     } 
-//     else if (chosen === 3)
-//     {
-//     [, ,{title , age , available , skills: [, a]}] = myFriends;
-//     console.log(`${title} \n ${age} \n ${available? "": "Not"}available \n ${a}`);
-
-//     }
-
-    //=============================================
-//     let myNumbers = [1, 2, 3, 4, 5];
-
-// // Write Your Destructuring Assignment Here
-// let [a, , , , e] = myNumbers;
-// console.log(a * e); // 5
-//=================================================
-// let mySkills = ["HTML", "CSS", "JavaScript", ["PHP", "Python", ["Django", "Laravel"]]];
-
-// // Write Your Destructuring Assignment Here
-// [a,b,c,[d,e,[f,g]]] = mySkills;
-// console.log(`My Skills: ${a}, ${b}, ${c}, ${d}, ${e}, ${f}, ${g}`);
-
-// // My Skills: HTML, CSS, JavaScript, PHP, Python, Django, Laravel
-//====================================================
-// let arr1 = ["Ahmed", "Sameh", "Sayed"];
-// let arr2 = ["Mohamed", "Gamal", "Amir"];
-// let arr3 = ["Haytham", "Shady", "Mahmoud"];
-
-// // Play With Arrays To Prepare For Destructuring
-// arr1 = arr1.concat(arr2,arr3);
-// console.log(arr1);
-// // Write Your Destructuring Assignment Here
-// [c, , , , , , , a,b] = arr1;
-// console.log(`My Best Friends: ${a}, ${b}, ${c}`);
-
-// // My Best Friends: Shady, Mahmoud, Ahmed
-//============================================
-// const member = {
-//     age: 30,
-//     working: false,
-//     country: "Egypt",
-//     hobbies: ["Reading", "Swimming", "Programming"],
-//   };
+// //time after
+// let timeThen = new Date();
+// console.log(timeThen -  timeNow);
+//====================================
+// function* gen(){
+//   let i =14;
+//   let x = 0 ; 
+//   while(true){
+//     yield i;
+//     i += 140 + x ;
+//      //154 //
+//     x+=200;
+//   }
   
-//   // Write Your Destructuring Assignment Here
-//   let {age: a, working: w, country:c,hobbies:[h1,,h3]} = member;
-//   console.log(`My Age Is ${a} And Iam ${w ? "" : "Not"} Working`);
-//   // My Age Is 30 And Iam Not Working
-  
-//   console.log(`I Live in ${c}`);
-//   // I Live in Egypt
-  
-//   console.log(`My Hobbies: ${h1} And ${h3}`);
-  // My Hobbies: Reading And Programming
-//=======================================
-// const game = {
-//     title: "YS",
-//     developer: "Falcom",
-//     releases: {
-//     "Oath In Felghana": ["USA", "Japan"],
-//     "Ark Of Napishtim": {
-//         US: "20 USD",
-//         JAP: "10 USD",
-//     },
-//     Origin: "30 USD",
-//     },
-//   };
-  
-//   // Write Your Destructuring Assignment/s Here
-//   let {title:t} = game;
-//   console.log(`My Favourite Games Style Is ${t} Style`);
-//   // My Favourite Games Style Is YS Style
-//    let {developer: d}=game;
-//   console.log(`And I Love ${d} Games`);
-//   // And I Love Falcom Games
+// }
+// let generator = gen();
 
-//    let {"Oath In Felghana":o }=game;
-//    let {"Oath In Felghana":[u,j]}=game.releases
-//   console.log(`My Best Release Is ${o} It Released in ${u} & ${j}`);
-//   // My Best Release Is Oath In Felghana It Released in USA & Japan
-//   let {"Ark Of Napishtim":a }=game;
-//   console.log(`Although I Love ${a}`);
-//   // Although I Love Ark Of Napishtim
-//   let {US:u_price}=game.releases["Ark Of Napishtim"]
-//   console.log(`${a} Price in USA Is ${u_price}`);
-//   // Ark Of Napishtim Price in USA Is 20 USD
-//   let {JAP:j_price}=game.releases["Ark Of Napishtim"]
-//   console.log(`${a} Price in Japan Is ${j_price}`);
-//   // Ark Of Napishtim Price in Japan Is 10 USD
-//   let {Origin:or}=game.releases
-//   console.log(`Origin Price Is ${or}`);
-//   // Origin Price Is 30 USD
-//==============================================
+// console.log(generator.next()); // {value: 14, done: false}
+// console.log(generator.next()); // {value: 154, done: false}
+// console.log(generator.next()); // {value: 494, done: false}
+// console.log(generator.next()); // {value: 1034, done: false}
+// console.log(generator.next()); // {value: 1774, done: false}
+// console.log(generator.next()); // {value: 2714, done: false}
+// console.log(generator.next()); // {value: 3854, done: false}
+// console.log(generator.next()); // {value: 5194, done: false}
+// console.log(generator.next()); // {value: 6734, done: false}
+//====================================
+
+// function* genNumbers() {
+//   yield* [1, 2, 2, 2, 3, 4, 5];
+// }
+// function* genLetters() {
+//   yield* ["A", "B", "B", "B", "C", "D"];
+// }
+
+// // Write Your Generator Function Here
+
+// let mySet = new Set();
+// for(let value of genNumbers()){
+//   mySet.add(value)
+// }
+// for(let value of genLetters()){
+//   mySet.add(value)
+// }
+// function* genAll(){
+//   yield* mySet;
+
+// }
+// let generator = genAll();
+
+// console.log(generator.next()); // {value: 1, done: false}
+// console.log(generator.next()); // {value: 2, done: false}
+// console.log(generator.next()); // {value: 3, done: false}
+// console.log(generator.next()); // {value: 4, done: false}
+// console.log(generator.next()); // {value: 5, done: false}
+// console.log(generator.next()); // {value: "A", done: false}
+// console.log(generator.next()); // {value: "B", done: false}
+// console.log(generator.next()); // {value: "C", done: false}
+// console.log(generator.next()); // {value: "D", done: false}
