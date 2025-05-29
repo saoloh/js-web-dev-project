@@ -44,11 +44,13 @@
 // //get the  html collection inputFourm
 
 // let inputFourm = document.getElementsByTagName('input');
-
-// console.log(inputFourm[0]);
+// console.log(inputFourm[0])
+// inputFourm[0].addEventListener("input",()=>{
+// outputDiv.innerHTML  = `{${inputFourm[0].value}} USD Dollar = {${inputFourm[0].value*50}} Egyptian Pound`
+// })
 
 // //change info in the outputDiv
-// outputDiv.innerHTML  = `{${inputFourm.dollar}} USD Dollar = {${inputFourm.dollar*50}} Egyptian Pound`
+
 //==================================================
 // let firstDiv  = document.querySelector(".one");
 // let secondtDiv  = document.querySelector(".two");
@@ -77,14 +79,24 @@
 //     }
 // })
 //=========================================
-// // number of ele
+// number of ele
+// let form = document.querySelector("form");
+
 // let formInput = Array.from(document.querySelectorAll('.input'));
-// console.log(formInput);
-// let numinput = formInput[0].nodeValue
-// console.log(numinput)
-// // text in the ele
-// let 
-// // type of ele
+
+// form.addEventListener("submit", e => {
+//     e.preventDefault();
+//     for (let i = 0 ; i < formInput[0].value ; i++){
+//         let div = document.createElement("div");
+//         div.className = "gridDiv";
+//         let text = document.createTextNode(formInput[1].value);
+//         div.appendChild(text);
+//         document.body.appendChild(div);
+        
+//     }
+// })
+
+
 
 
 
